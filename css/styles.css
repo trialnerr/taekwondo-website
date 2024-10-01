@@ -1,0 +1,291 @@
+:root{
+   --primary-bg-color: white ; 
+   --secondary-color: black; 
+   --secondary-color: rgb(165, 42, 42);
+  --link-hover-color: rgb(140, 19, 19);
+   --text-color: black; 
+   --text-color-dark: white; 
+   --secondary-text-color: #7b8089; 
+  
+   --h1-font-size: 6rem; 
+   --h2-font-size: 4rem; 
+   --h3-font-size: 3rem; 
+   
+   --container-l-r-padding: 9%; 
+   --container-t-b-padding: 1rem; 
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+a{
+  color:inherit; 
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.sr__only{
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
+
+.section{
+  padding: var(--container-t-b-padding) var(--container-l-r-padding);
+  min-height: 90vh;
+}
+
+.header__level1{
+  padding: var(--container-t-b-padding) var(--container-l-r-padding);
+  background: var(--secondary-color);
+
+  color: var(--text-color-dark);
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.phone__icon{
+  margin-right: 0.5rem;
+}
+
+.header__level2{
+  padding: 2rem var(--container-l-r-padding);
+  background: var(--primary-bg-color);
+  color: var(--text-color);
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.logo{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav__links{
+  display: flex;
+}
+
+.nav__links li{
+  margin-right: 4rem;
+  color: var(--text-color);
+}
+
+.nav__links a:hover{
+  color: var(--link-hover-color);
+}
+
+.nav__links li:last-child{
+  margin-right: 0;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.video__bg {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+
+}
+
+.home__content h1{
+  font-size: var(--h1-font-size);
+  color: white;
+}
+
+.home__text{
+  padding: 0.4rem 0; 
+}
+
+.color{
+  color: var(--secondary-color);
+}
+
+.button{
+  display: inline-block;
+
+  background: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.button:hover{
+  background: var(--link-hover-color);
+}
+
+.big__button{
+  padding: 1rem 2rem;
+    font-size: 2.5rem;
+}
+
+.medium__button{
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.small__button{
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+}
+
+
+.section__heading{
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.services__content{
+  margin: 2rem 0;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.services__box{
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--primary-bg-color);
+  
+}
+
+/* //make it keep the aspect ratio */
+.services__box img{
+  width:100%; 
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  
+}
+
+.services__box h3{
+  font-size: var(--h3-font-size);
+  text-align: center;
+}
+
+.about__content{
+  display: flex;
+  gap: 2rem;
+}
+
+.about__content img{
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.about__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.membership__content{
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.membership__box{
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--primary-bg-color);
+}
+
+.plus__icon{
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-right: 0.5rem;
+}
+
+.minus__icon{
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  color: grey;
+}
+
+.membership__box h3{
+  font-size: var(--h3-font-size);
+}
+
+.membership__box ul{
+  margin: 1rem 0;
+}
+
+.membership__box ul li{
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.membership__box ul li:last-child{
+  margin-bottom: 0;
+}
+
+footer{
+  background: var(--secondary-color);
+  color: var(--text-color-dark);
+  padding: 2rem var(--container-l-r-padding);
+  text-align: center;
+}
+
+.footer__social {
+  display: block;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.footer__social a{
+  color: var(--text-color-dark);
+}
+
+
+
+
+
+
+
+
+
