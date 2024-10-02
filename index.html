@@ -12,29 +12,36 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <section class="header__level1">
-        <p>Open Hours: MON-SAT: 8AM-10PM</p>
-        <div>
-          <!-- <p><i class='bx bx-phone-call phone__icon'></i>Call Us: 123-456-7890</p> -->
-          <p>Call Us: 123-456-7890</p>
-          
-        </div>
-      </section>
+      <div class="level1__container">
+        <section class="header__level1">
+          <p>Open Hours: MON-SAT: 8AM-10PM</p>
+          <div>
+            <p>Call Us: 123-456-7890</p>
+          </div>
+        </section>
+      </div>
+
       <section class="header__level2">
-        <a href="" class="logo">Taekwondo <span class="color">Lives Here</span></a>
-        <ul class="nav__links">
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Memberships</a></li>
-          <li><a href="">Testimonials</a></li>
-        </ul>
-        <div><a href="">Join Us</a></div>
+        <div class="level2__wrapper">
+          <a href="" class="logo">Taekwondo <span class="color">Lives Here</span></a>
+          <div class="link__wrapper">
+            <ul class="nav__links">
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Memberships</a></li>
+              <!-- <li><a href="">Testimonials</a></li> -->
+            </ul>
+            <div><a href="" class="join_us">Join Us</a></div>
+          </div>
+
+        </div>
+
       </section>
     </div>
 
   </header>
-  <main class="home section" id="home">
+  <main class="home" id="home">
     <video class='video__bg' autoplay muted loop>
       <source src="./assets/taekwondo-video-bg.mp4" />
     </video>
@@ -48,138 +55,150 @@
 
 
   <section class="about section">
-    <h2 class="section__heading">About <span class="color">Us</span></h2>
-    <div class="about__content">
+    <div class="section__wrapper">
+      <h2 class="section__heading">About <span class="color">Us</span></h2>
+      <div class="about__content">
 
-      <div class="about__text">
-        <div class="about__text__wrapper">
-          <h3>Why Choose Us</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p>
-          <a href="" class="button medium__button">Book a session</a>
+        <div class="about__text">
+          <div class="about__text__wrapper">
+            <h3>Why Choose Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p>
+            <a href="" class="button medium__button">Book a session</a>
+          </div>
+
+
         </div>
-
-
+        <div class="about__img"></div>
+        <img src="./assets/about-pic.jpg" alt="">
       </div>
-      <div class="about__img"></div>
-      <img src="./assets/about-pic.jpg" alt="">
     </div>
+
   </section>
 
   <section class="services section" id="services">
-    <h2 class="section__heading">Our <span class="color">Services</span></h2>
-    <div class="services__content">
-      <div class="services__box">
-        <img src="./assets/services-1.jpg" alt="">
-        <h3>Service 1</h3>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p> -->
-      </div>
-      <div class="services__box">
-        <img src="./assets/services-2.jpg" alt="">
-        <h3>Service 2</h3>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p> -->
-      </div>
-      <div class="services__box">
-        <img src="./assets/services-3.jpg" alt="">
-        <h3>Service 3</h3>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p> -->
+    <div class="section__wrapper">
+      <h2 class="section__heading">Our <span class="color">Services</span></h2>
+      <div class="services__content">
+        <article  class="services__box">
+            <div class="img__wrapper">
+              <img src="./assets/services-1.jpg" alt="">
+            </div>
+          <h3>Service 1</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p> -->
+        </article >
+        <article  class="services__box">
+          <div class="img__wrapper">
+            <img src="./assets/services-2.jpg" alt="">
+          </div>
+          <h3>Service 2</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p> -->
+        </article >
+        <article class="services__box">
+        <div class="img__wrapper">
+          <img src="./assets/services-3.jpg" alt="">
+        </div>
+          <h3>Service 3</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum! Lorem, ipsum dolor.</p> -->
+        </article >
       </div>
     </div>
+
 
   </section>
 
   <section class="membership section">
-    <h2 class="section__heading">Our <span class="color">Memberships</span></h2>
-    <div class="membership__content">
-      <div class="membership__box">
-        <h3>Basic</h3>
-        <h4 class="color">$49/month</h4>
-        <ul>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 1
-          </li>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 2
-          </li>
-          <li>
-            <i class='bx bxs-minus-circle minus__icon'></i>Feat 3
-          </li>
-          <li>
-            <i class='bx bxs-minus-circle minus__icon'></i></i>Feat 4
-          </li>
-          <li>
-            <i class='bx bxs-minus-circle minus__icon'></i></i>Feat 5
-          </li>
+    <div class="section__wrapper">
+      <h2 class="section__heading">Our <span class="color">Memberships</span></h2>
+      <div class="membership__content">
+        <article class="membership__box">
+          <h3>Basic</h3>
+          <h4 class="color">$49/month</h4>
+          <ul>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 1
+            </li>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 2
+            </li>
+            <li>
+              <i class='bx bxs-minus-circle minus__icon'></i>Amazing Feature 3
+            </li>
+            <li>
+              <i class='bx bxs-minus-circle minus__icon'></i></i>Amazing Feature 4
+            </li>
+            <li>
+              <i class='bx bxs-minus-circle minus__icon'></i></i>Amazing Feature 5
+            </li>
 
-        </ul>
-        <a href="" class="button medium__button">Join Now</a>
-      </div>
-      <div class="membership__box">
-        <h3>Pro</h3>
-        <h4 class="color">$99/month</h4>
-        <ul>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 1
-          </li>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 2
-          </li>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 3
-          </li>
-          <li>
-            <i class='bx bxs-minus-circle minus__icon'></i>Feat 4
-          </li>
-          <li>
-            <i class='bx bxs-minus-circle minus__icon'></i>Feat 5
-          </li>
-        </ul>
+          </ul>
+          <a href="" class="button medium__button">Join Now</a>
+        </article>
+        <article class="membership__box">
+          <h3>Pro</h3>
+          <h4 class="color">$99/month</h4>
+          <ul>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 1
+            </li>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 2
+            </li>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 3
+            </li>
+            <li>
+              <i class='bx bxs-minus-circle minus__icon'></i>Amazing Feature 4
+            </li>
+            <li>
+              <i class='bx bxs-minus-circle minus__icon'></i>Amazing Feature 5
+            </li>
+          </ul>
 
-        <a href="" class="button medium__button">Join Now</a>
-      </div>
-      <div class="membership__box">
-        <h3>Premium</h3>
-        <h4 class="color">$199/month</h4>
-        <ul>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 1
-          </li>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 2
-          </li>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 3
-          </li>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 4
-          </li>
-          <li>
-            <i class='bx bxs-plus-circle plus__icon'></i>Feat 5
-          </li>
-        </ul>
-        <a href="" class="button medium__button">Join Now</a>
+          <a href="" class="button medium__button">Join Now</a>
+        </article>
+        <article class="membership__box">
+          <h3>Premium</h3>
+          <h4 class="color">$199/month</h4>
+          <ul>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 1
+            </li>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 2
+            </li>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 3
+            </li>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 4
+            </li>
+            <li>
+              <i class='bx bxs-plus-circle plus__icon'></i>Amazing Feature 5
+            </li>
+          </ul>
+          <a href="" class="button medium__button">Join Now</a>
+        </article>
       </div>
     </div>
+
   </section>
 
   <footer class="footer">
     <ul class="footer__social">
-                <li>
-                  
-                </li>
-                <li>
-                  <a href="">
-                    <span class="sr__only">Instagram</span>
-                    <i class='bx bxl-instagram'></i>
-                  </a>
-                </li>
-                <li>
-                  <a href=""><span class="sr__only">Facebook</span>
-                    <i class='bx bxl-facebook'></i>
-                  </a>
-                </li>
-                <li><a href=""><span class="sr__only">X</span><i class='bx bxl-twitter'></i></a></li>
-              </ul>
+      <li>
+        <a href="">
+          <span class="sr__only">Instagram</span>
+          <i class='bx bxl-instagram icon'></i>
+        </a>
+      </li>
+      <li>
+        <a href=""><span class="sr__only">Facebook</span>
+          <i class='bx bxl-facebook icon'></i>
+        </a>
+      </li>
+      <li><a href=""><span class="sr__only">X</span><i class='bx bxl-twitter icon'></i></a></li>
+    </ul>
     <p>&copy; 2024 Taekwondo Lives Here. All rights reserved.</p>
 </body>
 
