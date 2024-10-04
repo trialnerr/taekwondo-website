@@ -1,1 +1,1 @@
-A taekwondo restaurant page made with html and css. 
+A taekwondo gym website made with html and css. 
